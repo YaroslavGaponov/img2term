@@ -1,5 +1,5 @@
 /*
- node-jvm
+ img2term
  Copyright (c) 2013 Yaroslav Gaponov <yaroslav.gaponov@gmail.com>
 */
 var fs = require('fs');
