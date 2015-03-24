@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var img2term = require('img2term');
+
+var argv = require('optimist')
+    .alias('i', 'image')
+    .describe('i','image file')
+    .demand('i')
+    .alias('h', 'height')
+    .default('h', 5)
+    .alias('w','width')
+    .default('w', 5)
+    .argv;
+
+img2term.print(argv.image, argv.height, argv.width);
