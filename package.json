@@ -1,6 +1,6 @@
 {
   "name": "img2term",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "print image to terminal",
   "main": "index.js",
   "dependencies": {

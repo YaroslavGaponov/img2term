@@ -10,6 +10,13 @@ var argv = require('optimist')
     .default('h', 5)
     .alias('w','width')
     .default('w', 5)
+    .boolean('c')
+    .alias('c', 'clear')
+    .default('c', true)
     .argv;
+
+if (argv.clear) {
+    img2term.clear();
+}
 
 img2term.print(argv.image, argv.height, argv.width);

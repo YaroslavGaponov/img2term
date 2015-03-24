@@ -1,11 +1,15 @@
 /*
  img2term
- Copyright (c) 2013 Yaroslav Gaponov <yaroslav.gaponov@gmail.com>
+ Copyright (c) 2015 Yaroslav Gaponov <yaroslav.gaponov@gmail.com>
 */
 var fs = require('fs');
 var clc = require('cli-color');
 var jpeg = require('jpeg-js');
 var x256 = require('x256');
+
+module.exports.clear = function () {
+   process.stdout.write(clc.reset);
+}
 
 module.exports.print = function (fileName, scaleHeight, scaleWidth) {
    scaleHeight = scaleHeight || 1;
@@ -13,8 +17,8 @@ module.exports.print = function (fileName, scaleHeight, scaleWidth) {
    
    var rawImage = fs.readFileSync(fileName);
    var image = jpeg.decode(rawImage);
-
-   process.stdout.write(clc.reset);
+   
+   process.stdout.write('\n');
    for (var j = 0; j < image.height; j += scaleHeight) {
       for (var i = 0; i < image.width; i += scaleWidth) {
          var indx = (j * image.width + i) << 2;
