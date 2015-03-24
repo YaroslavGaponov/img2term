@@ -1,6 +1,6 @@
 {
   "name": "img2term",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "print image to terminal",
   "main": "index.js",
   "dependencies": {
@@ -8,6 +8,9 @@
     "jpeg-js": "^0.1.1",
     "x256": "^0.0.2",
     "optimist": "^0.6.1"
+  },
+  "bin": {
+    "img2term": "./bin/img2term"
   },
   "devDependencies": {},
   "scripts": {
