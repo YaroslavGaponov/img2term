@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 
-var img2term = require('img2term');
+var img2term;
+try {
+    img2term = require('img2term');
+} catch (e) {
+    img2term = require('../index');
+}
 
 var argv = require('optimist')
     .alias('i', 'image')
