@@ -2,8 +2,7 @@ Img2term
 =====================
 print image to terminal
 
-![Demo]
-(https://github.com/YaroslavGaponov/img2term/blob/master/term.jpg)
+![Demo](https://github.com/YaroslavGaponov/img2term/blob/master/term.jpg)
 
 Terminal
 ---------
