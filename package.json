@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "cli-color": "^0.3.3",
-    "jpeg-js": "^0.1.1",
+    "jpeg-js": "^0.4.1",
     "x256": "^0.0.2",
     "optimist": "^0.6.1"
   },
